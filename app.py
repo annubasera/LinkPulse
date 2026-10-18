@@ -73,7 +73,7 @@ def go(code):
     conn.commit()
     conn.close()
     return redirect(row["original_url"])
-
+init_db()
 if __name__ == "__main__":
     init_db()
     app.run(debug=True)
